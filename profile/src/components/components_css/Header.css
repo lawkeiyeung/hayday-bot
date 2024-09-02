@@ -1,0 +1,56 @@
+header {
+    background-color: var(--color-bg2);
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+header nav ul li a:hover {
+    color: #007acc;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg2);
+    /* Or any color of your choice */
+    z-index: 1000;
+    /* Ensures header is above other content */
+}
+
+body {
+    margin: 0;
+    padding-top: 120px;
+    /* Adjust based on the height of your header */
+}
+
+.bulb {
+    outline: none !important;
+    box-shadow: none !important;
+}

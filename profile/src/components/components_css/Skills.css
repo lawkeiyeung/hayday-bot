@@ -1,0 +1,146 @@
+/* General section styling */
+.section {
+    padding: 4rem 2rem;
+    background-color: var(--color-bg);
+}
+
+/* Skill header */
+.skill-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Mac container styling */
+.maccontainer {
+    position: relative;
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Image wrapper styling */
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Content styling */
+/*.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #da8b8b;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #da8b8b;
+    padding: 1rem;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content.fade-out {
+    opacity: 0;
+    /* Fade out */
+}
+
+.content.fade-in {
+    opacity: 1;
+    /* Fade in */
+}
+
+/* Skills wrapper styling */
+.skills-wrapper {
+    margin-top: 2rem;
+}
+
+/* Icon sets styling */
+.set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 100%; /* Ensure icons don’t overflow */
+}
+
+/* Icon card styling */
+.icon-card {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect on icons */
+.icon-card:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+/* Button styling */
+.skillsbtn {
+    background: none;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Active button styling */
+.skillsbtn-active {
+    color: #da8b8b;
+}
+
+/* Underline for button */
+.skillsbtn::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #da8b8b;
+    transition: width 0.3s ease;
+}
+
+/* Underline when button is active */
+.skillsbtn-active::after {
+    width: 100%;
+}
+
+/* Underline on hover */
+.skillsbtn:hover::after {
+    width: 100%;
+}
+
+/* Remove default focus outline */
+.skillsbtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}

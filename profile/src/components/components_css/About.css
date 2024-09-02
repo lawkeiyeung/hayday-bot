@@ -1,0 +1,37 @@
+/* About Section Styles */
+#about {
+    padding: 60px 0;
+    background-color: var(--color-bg);
+}
+
+#about h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+    text-align: left;
+}
+
+#about ul {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#about ul li {
+    font-size: 18px;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#about ul li:last-child {
+    border-bottom: none;
+}
